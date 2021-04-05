@@ -1,0 +1,23 @@
+{
+    "id": "io.supernova.less",
+    "name": "LESS",
+    "description": "Provides automatic export of styling information from your design system library.",
+    "author": "Jiri Trecak",
+    "organization": "Supernova",
+    "homepage": "https://supernova.io",
+    "source_dir": "src",
+    "version": "1.0.0",
+    "config": {
+        "sources": "sources.json",
+        "output": "output.json"
+    },
+    "engines": {
+        "pulsar": "1.0.0",
+        "supernova": "1.0.0"
+    },
+    "tags": [
+        "LESS",
+        "Styles",
+        "Tokens"
+    ]
+}
