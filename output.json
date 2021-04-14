@@ -2,7 +2,31 @@
     "blueprints": [
         {
             "invoke": "colors.pr",
-            "write_to": "styles/colors.css"
+            "write_to": "colors.less"
+        },
+        {
+            "invoke": "borders.pr",
+            "write_to": "borders.less"
+        },
+        {
+            "invoke": "gradients.pr",
+            "write_to": "gradients.less"
+        },
+        {
+            "invoke": "measures.pr",
+            "write_to": "measures.less"
+        },
+        {
+            "invoke": "shadows.pr",
+            "write_to": "shadows.less"
+        },
+        {
+            "invoke": "typography.pr",
+            "write_to": "typography.less"
+        },
+        {
+            "invoke": "index-file.pr",
+            "write_to": "index.less"
         }
     ]
 }
