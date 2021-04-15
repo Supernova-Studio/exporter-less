@@ -24,20 +24,14 @@ Once you have run the exporter against your design system, you can start using t
 
 ### [Example 1]
 
-[Todo description]
+Import `index.less` file to your project and use generated styles
 
 ```
-[Code]
+.yourClass {
+    color: @yourToken;
+}
 ```
 
-
-### [Example 2]
-
-[Todo description]
-
-```
-Code
-```
 
 ## Installing
 
@@ -79,7 +73,7 @@ We are developing and maintaining exporters for many major technologies. Here ar
 - [Typescript Exporter](https://github.com/Supernova-Studio/exporter-typescript)
 - [CSS Exporter](https://github.com/Supernova-Studio/exporter-css)
 - [LESS Exporter](https://github.com/Supernova-Studio/exporter-less)
-- [SASS Exporter](https://github.com/Supernova-Studio/exporter-sass)
+- [SCSS Exporter](https://github.com/Supernova-Studio/exporter-scss)
 
 
 Additionally, we are also developing and maintaining exporters for specific use cases:
