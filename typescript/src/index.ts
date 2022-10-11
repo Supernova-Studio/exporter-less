@@ -77,6 +77,8 @@ Pulsar.registerFunction("shadowDescription", function (shadowToken) {
     connectedShadow = shadowToken.shadowLayers.reverse().map((shadow) => {
         return shadowTokenValue(shadow)
     }).join(", ")
+  } else {
+    return shadowTokenValue(shadowToken)
   }
 
   return connectedShadow ?? ""
