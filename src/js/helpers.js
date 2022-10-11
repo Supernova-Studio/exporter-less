@@ -72,12 +72,15 @@ Pulsar.registerPayload("behavior", {
 /** Describe complex shadow token */
 Pulsar.registerFunction("shadowDescription", function (shadowToken) {
   
-  let connectedShadow = shadowToken.shadowLayers?.reverse().map((shadow) => {
-      return shadowTokenValue(shadow)
-  })
-  .join(", ")
+  let connectedShadow = "transparent"
+  if (shadowToken.shadowLayers) {
+    shadowToken.shadowLayers.reverse().map((shadow) => {
+        return shadowTokenValue(shadow)
+    })
+    .join(", ")
+  }
 
-  return connectedShadow
+  return connectedShadow ?? ""
 })
 
 /** Convert complex shadow value to CSS representation */
